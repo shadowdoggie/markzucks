@@ -1,5 +1,5 @@
 body {
-    height: 695px;
+    /* height: 695px; */
     width: 965px;
     padding-left: 0px;
     margin-right: 15px;
@@ -8,7 +8,7 @@ body {
 }
 
 #mainHeader {
-    position: absolute;
+    position: relative;
     padding: 3px;
     margin: 0px;
 }
@@ -22,7 +22,7 @@ body {
 #loginButton {
     background-color: #3b5999;
     position:absolute;
-    margin-left: 50.8%;
+    margin-left: 51%;
     margin-top: -2.4%;
     padding: 0.3%;
     color: white;
@@ -32,7 +32,7 @@ body {
 #registerButton {
     background-color: #3b5999;
     position:absolute;
-    margin-left: 55.85%;
+    margin-left: 56.1%;
     margin-top: -2.45%;
     padding: 0.4%;
     color: white;
@@ -49,12 +49,20 @@ body {
     cursor: pointer;
 }
 
+#mainContent {
+    display:flex;
+    align-items: start;
+}
 
 #loginPart {
-    position: absolute;
-    margin-top: 150px;
+    position: relative;
+    /* margin-top: 150px; */
     border: dashed thin #3b5999;
     margin-left: 1px;
+    flex-basis: 10%;
+    flex-shrink: 1;
+    padding: 5px;
+    margin-right: 5px;
 }
 
 #register2Button {
@@ -83,12 +91,14 @@ body {
 }
 
 #welcomeDiv {
-    position: absolute;
-    margin-top: 105px;
-    margin-left: 185px;
-    width: 781px;
+    position: relative;
+    /* margin-top: 105px; */
+    /* margin-left: 185px; */
+    /* width: 781px; */
     border: solid thin #3b5999;
     padding-bottom: 35px;
+    flex-basis: 90%;
+    flex-shrink: 1;
 }
 
 #welcomeTextHeader {
@@ -107,43 +117,34 @@ body {
 }
 
 #welcomeTextHeader2 {
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 50px;
+    position: relative;
+    margin-top: 25px;
     font-weight: bold;
     font-size: 28px;
     display:block;
+    text-align: center;
 }
 
-#descriptionText1 {
+.descriptionText {
     margin-top: 15px;
-}
-
-#descriptionText2 {
-    margin-top: 15px;
-}
-
-#descriptionText3 {
-    margin-top: 15px;
-}
-
-#descriptionText4 {
-    margin-top: 15px;  
-}
-
-#descriptionText5 {
-    margin-top: 15px
 }
 
 #descriptionDiv {
     position: relative;
-    margin-top: 75px;
+    margin-top: 19px;
     font-size: 21px;
     margin-left: 20px;
 }
 
+#buttons3 {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
 #register3Button {
-    margin-left: 335.5px;
+    /* margin-left: 335.5px; */
     background-color: #538adc;
     color: white;
     border-color: #538adc;
@@ -162,42 +163,17 @@ body {
 }
 
 #bottomHeader {
-    position: absolute;
-    margin-top: 610px;
-    margin-left: 350px;
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-#aboutButton2 {
+#bottomHeader a {
     position: relative;
-    background-color: transparent;
     color: #538adc;
     cursor: pointer;
-}
-
-#contactButton {
-    position: relative;
-    background-color: transparent;
-    color: #538adc;
-    cursor: pointer;
-}
-
-#faqButton {
-    position: relative;
-    background-color: transparent;
-    color: #538adc;
-    cursor: pointer;
-}
-
-#termsButton {
-    position: relative;
-    background-color: transparent;
-    color: #538adc;
-    cursor: pointer;
-}
-
-#privacyButton {
-    position: relative;
-    background-color: transparent;
-    color: #538adc;
-    cursor: pointer;
+    text-decoration: none;
 }

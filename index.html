@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <body>
-            <div id="mainDiv">
-            <h1 id="mainHeader">
-                <img id="headerImage" src="pics/thefbheader.png" alt="HeaderImage">
-                <button  type="button" style="border: 0ch;" id="loginButton"> login</button>
-                <button  type="button" style="border: 0ch;" id="registerButton"> register</button>
-                <button  type="button" style="border: 0ch;" id="aboutButton"> about</button>
-            </h1>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="mainDiv">
+        <h1 id="mainHeader">
+            <img id="headerImage" src="pics/thefbheader.png" alt="HeaderImage">
+            <button type="button" style="border: 0ch;" id="loginButton"> login</button>
+            <button type="button" style="border: 0ch;" id="registerButton"> register</button>
+            <button type="button" style="border: 0ch;" id="aboutButton"> about</button>
+        </h1>
+        <div id="mainContent">
             <div id="loginPart">
                 <div id="emailInputArea">Email:</div>
                 <input id="emailInput">
                 <div id="passwordInputArea">Password:</div>
-                <input id="passwordInput">               
-                <div id="passwordInputButtons">               
-                    <button  type="button" id="register2Button"> register</button>
-                    <button  type="button" id="login2Button"> login</button>
+                <input id="passwordInput">
+                <div id="passwordInputButtons">
+                    <button type="button" id="register2Button"> register</button>
+                    <button type="button" id="login2Button"> login</button>
                 </div>
                 <div id="openSpaceLoginPart"></div>
             </div>
 
             <div id="welcomeDiv">
-                <div id="welcomeTextHeader2">[ Welcome to Thefacebook ]</div>
                 <div id="welcomeTextHeader">
                     <div id="welcomeText">Welcome to TheFacebook!</div>
                 </div>
+                <div id="welcomeTextHeader2">[ Welcome to Thefacebook ]</div>
                 <div id="descriptionDiv">
-                <div id="descriptionText1">Thefacebook is an online directory that connects people through social networks at</div>
-                <div id="descriptionText2">colleges.</div>              
-                <div id="descriptionText3">We have opened up Thefacebook for popular consumption at <b>Harvard University.</b></div>
-                <div id="descriptionText4">You can use Thefacebook to:</div> 
-                <ul id="descriptionList1">
-                    <li>Search for people at your school</li>
-                    <li>Find out who are in your classes</li>
-                    <li>Look up your friends' friends</li>
-                    <li>See a visualization of yo-ur social network</li>
-                    <div id="descriptionText5">To get started, click below to register. If you have already registered, you can login.</div>
-                </ul>
-                <button  type="button" id="register3Button"> Register</button>
-                <button  type="button" id="login3Button"> Login</button>
-            </div>
+                    <div class="descriptionText">Thefacebook is an online directory that connects people through social
+                        networks at <br>colleges.</div>
+                    <div class="descriptionText">We have opened up Thefacebook for popular consumption at <b>Harvard
+                            University.</b></div>
+                    <div class="descriptionText">You can use Thefacebook to:</div>
+                    <ul id="descriptionList1">
+                        <li>Search for people at your school</li>
+                        <li>Find out who are in your classes</li>
+                        <li>Look up your friends' friends</li>
+                        <li>See a visualization of your social network</li>
+                    </ul>
+                    <div class="descriptionText">To get started, click below to register. If you have already
+                        registered,
+                        you can login.</div>
+                    <div id="buttons3">
+                        <button type="button" id="register3Button"> Register</button>
+                        <button type="button" id="login3Button"> Login</button>
+                    </div>
                 </div>
             </div>
-            <h2 id="bottomHeader">
-                <button  type="button" style="border: 0ch;" id="aboutButton2" onclick="window.location.href='about.html';"> about</button>
-                <button  type="button" style="border: 0ch;" id="contactButton"> contact</button>
-                <button  type="button" style="border: 0ch;" id="faqButton"> faq</button>
-                <button  type="button" style="border: 0ch;" id="termsButton"> terms</button>
-                <button  type="button" style="border: 0ch;" id="privacyButton"> privacy</button>
-            </h2>
-        </body>
-    </head>
+        </div>
+    </div>
+    <footer id="bottomHeader">
+        <a id="aboutButton2" href="about.html">
+            about</a>
+        <a id="contactButton" href=""> contact</a>
+        <a id="faqButton" href=""> faq</a>
+        <a id="termsButton" href=""> terms</a>
+        <a id="privacyButton" href=""> privacy</a>
+    </footer>
+</body>
+
 </html>
